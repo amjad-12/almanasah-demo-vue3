@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700&family=Inter:wght@400;700&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .my-backface-visibility {
+    backface-visibility: hidden;
+  }
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  html {
+    direction: rtl;
+
+    font-size: 62.5%;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    html {
+      font-size: 58%;
+    }
+  }
+
+  @media only screen and (max-width: 300) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+  .Mycontainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10rem 90vh 70vh 100vh 75vh 40vh min-content min-content 60vh;
+  }
+
+  /* @media only screen and (max-width: 700px) {
+    .Mycontainer {
+        grid-template-rows: 10rem 90vh 70vh 100vh 75vh 40vh min-content 100vh 45vh;;
+    }
+  } */
+
+  @media only screen and (max-width: 900px) {
+    .Mycontainer {
+      /* row-gap: 1.5rem; */
+      grid-template-rows: 3rem 60vh min-content min-content min-content 50vh 50vh min-content min-content min-content min-content min-content;
+    }
+  }
+
+
+  .btn_outline {
+    @apply border rounded-full p-3 border-mainColor text-mainColor flex justify-center
+  }
+
+  .btn_outline .btn_outline:hover {
+    @apply text-red-500
+  }
+
+  .btn_full {
+    @apply text-2xl font-bold border rounded-full p-3 bg-mainColor border-mainColor text-whiteColor h-10 w-72 flex justify-center items-center
+  }
+
+  .btn_full .btn_full:hover {
+    @apply bg-red-300
+  }
+
+  .btn_arrow {
+    @apply text-2xl font-bold border rounded-full p-3 bg-mainColor border-mainColor h-[1.5rem] w-[6rem] flex justify-center items-center
+  }
+
+  .btn_arrow .btn_arrow:hover {
+    @apply scale-50 transition-all
+  }
+
+  .header {
+    background-color: #31a9dc;
+  }
+
+  .icon__arrow {
+    @apply w-[3rem] h-[2rem] fill-whiteColor
+  }
+
+
+
+
+  /* ///////////////////////////////////////////////// */
+  /* PLANS STYLE */
+
+
+
+  .company__icon {
+    @apply w-[5rem] h-[5rem] mb-8 fill-iconColor
+  }
+
+  .footer__li {
+    @apply text-whiteColor text-2xl font-bold
+  }
+
+}
