@@ -11,7 +11,7 @@ import MobileInfo from './components/mobile/MobileInfo.vue'
 import AdvantagesContainer from './components/advantages/advantagesContainer.vue'
 import PlansContainer from './components/plans/PlansContainer.vue'
 import ContactUsContainer from './components/contact/ContactUsContainer.vue'
-import Footer from './components/Footer.vue'
+import FooterBar from './components/FooterBar.vue'
 
 export default {
   components: {
@@ -27,7 +27,7 @@ export default {
     AdvantagesContainer: AdvantagesContainer,
     PlansContainer: PlansContainer,
     ContactUsContainer: ContactUsContainer,
-    Footer: Footer
+    FooterBar: FooterBar
   }
 }
 
@@ -47,8 +47,7 @@ export default {
     <AdvantagesContainer></AdvantagesContainer>
     <PlansContainer></PlansContainer>
     <ContactUsContainer></ContactUsContainer>
-    <Footer></Footer>
+    <FooterBar></FooterBar>
   </body>
 </template>
 
-<style scoped lang="scss"></style>

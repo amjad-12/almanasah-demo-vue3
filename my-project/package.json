@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "tailwindcss-inner-border": "^0.2.0",
     "vue": "^3.2.47"
   },

@@ -1,7 +1,7 @@
 <template>
-    <div class="col-start-7 col-end-12 lg:col-span-full grid grid-cols-first-and-last-cols grid-rows-6">
+    <div class="col-start-7 col-end-12 lg:col-span-full grid grid-cols-first-and-last-cols grid-rows-6" data-aos="zoom-in">
         <h1
-            class="row-start-2 row-end-3 col-start-2 col-end-6 lg:row-start-1 lg:row-end-3 lg:self-center lg:justify-self-center text-6xl leading-11 text-fontColor font-bold xl:text-mexl">
+            class="hover:skew-x-[-15deg] hover:skew-y-[-1deg] hover:scale-110 transition-all duration-[.2s] row-start-2 row-end-3 col-start-2 col-end-6 lg:row-start-1 lg:row-end-3 lg:self-center lg:justify-self-center text-6xl leading-11 text-fontColor font-bold xl:text-mexl">
             احصل على
             تطبيق هاتفي لمتجرك</h1>
         <p
@@ -14,3 +14,4 @@
             الاّن</a>
     </div>
 </template>
+

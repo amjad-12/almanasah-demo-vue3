@@ -16,6 +16,10 @@
 
 <style scoped lang="scss">
 .nav-header li:hover {
-    @apply text-mainColor
+    @apply text-[#466bf3]
+}
+
+.lp {
+    color: #3a3afe;
 }
 </style>

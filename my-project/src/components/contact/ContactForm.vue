@@ -14,9 +14,9 @@
             class="contact__input self-start py-3 pr-7 row-start-4 row-end-5 col-span-full w-[70%] lg:w-[95%] h-[3.5rem]"
             type="text">
         <input placeholder="اترك تعليق"
-            class="contact__input  self-start pr-7 row-start-5 row-end-6 col-span-full w-[70%] lg:w-[95%] vsm:-mt-[4.75rem] h-full"
+            class="contact__input  self-start pr-7 row-start-5 row-end-6 col-span-full w-[70%] lg:w-[95%] sm:-mt-[2rem] mb-[5rem] h-full"
             type="text">
-        <a class="btn_full self-start col-span-full row-start-6 row-end-7 w-[70%] lg:w-[95%] vsm:-mt-[3.75rem] rounded-3xl"
+        <a class="btn_full self-start col-span-full row-start-6 row-end-7 w-[70%] lg:w-[95%] sm:-mb-[2rem] rounded-3xl "
             href="#">ارسل
             الطلب</a>
     </div>

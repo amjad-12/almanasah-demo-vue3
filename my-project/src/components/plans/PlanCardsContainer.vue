@@ -60,13 +60,19 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .plan__box {
-    @apply h-full w-full rounded-3xl
+    @apply h-full w-full rounded-3xl transition-all duration-[.2s] scale-105;
+
+    &:hover {
+            transform: scale(1.03);
+    }
 }
 
 .plan__box--front {
-    @apply bg-gradient-to-r from-[#c7e6ff] to-[#ebf6ff] grid grid-cols-plan grid-rows-plan justify-items-center -translate-y-5 transition-all duration-300
+    @apply bg-gradient-to-r from-[#c7e6ff] to-[#ebf6ff] grid grid-cols-plan grid-rows-plan justify-items-center -translate-y-2 transition-all duration-300;
+    
+
 }
 
 .plan__icon {

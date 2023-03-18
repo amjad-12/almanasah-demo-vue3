@@ -14,6 +14,8 @@ module.exports = {
 
       // 'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
+      vvsm: {'max': '300px'},
+
       vsm: {'max': '372px'},
 
       msm: {'max': '563px'},
@@ -81,6 +83,7 @@ module.exports = {
         'plans': 'repeat(auto-fit, minmax(min-content, .5fr))',
         'plan': 'repeat(3, minmax(13rem, 1fr))',
         'contact' : 'min-content',
+        'footer': 'min-content',
         'advantage': 'repeat(auto-fit, 1fr)'
       },
       borderRadius: {
