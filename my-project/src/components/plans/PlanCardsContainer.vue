@@ -65,7 +65,7 @@
     @apply h-full w-full rounded-3xl transition-all duration-[.2s] scale-105;
 
     &:hover {
-            transform: scale(1.03);
+            transform: scale(1.07);
     }
 }
 
