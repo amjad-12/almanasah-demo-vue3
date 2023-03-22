@@ -5,7 +5,10 @@ import HeroInfo from './components/hero/HeroInfo.vue'
 import HeroImage from './components/hero/HeroImage.vue'
 import FeatureInfo from './components/features/FeaturesInfo.vue'
 import FeaturesBoxesContainer from './components/features/FeaturesBoxesContainer.vue'
-import OurProducts from './components/OurProducts.vue'
+import AnimateFeatures from './components/features/AnimateFeatures.vue'
+// import OurProducts from './components/OurProducts.vue'
+// import SliderProducts from './components/SliderProducts.vue'
+import AnimateProductsSlider from './components/AnimateProductsSlider.vue'
 import MobileVideo from './components/mobile/MobileVideo.vue'
 import MobileInfo from './components/mobile/MobileInfo.vue'
 import AdvantagesContainer from './components/advantages/advantagesContainer.vue'
@@ -21,7 +24,10 @@ export default {
     HeroImage: HeroImage,
     FeatureInfo: FeatureInfo,
     FeaturesBoxesContainer: FeaturesBoxesContainer,
-    OurProducts: OurProducts,
+    AnimateFeatures: AnimateFeatures,
+    // OurProducts: OurProducts,
+    // SliderProducts: SliderProducts,
+    AnimateProductsSlider: AnimateProductsSlider,
     MobileVideo: MobileVideo,
     MobileInfo: MobileInfo,
     AdvantagesContainer: AdvantagesContainer,
@@ -40,8 +46,10 @@ export default {
     <HeroInfo></HeroInfo>
     <HeroImage></HeroImage>
     <FeatureInfo></FeatureInfo>
-    <FeaturesBoxesContainer></FeaturesBoxesContainer>
-    <OurProducts></OurProducts>
+    <AnimateFeatures></AnimateFeatures>
+    <!-- <OurProducts></OurProducts> -->
+    <!-- <SliderProducts></SliderProducts> -->
+    <AnimateProductsSlider></AnimateProductsSlider>
     <MobileVideo></MobileVideo>
     <MobileInfo></MobileInfo>
     <AdvantagesContainer></AdvantagesContainer>

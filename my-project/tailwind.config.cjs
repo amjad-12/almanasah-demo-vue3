@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: [
     "./index.html",
@@ -6,14 +7,8 @@ module.exports = {
   ],
   theme: {
     screens: {
-      // 'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      // 'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
-      // 'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+      box: {'max': '500px'},
+      
       vvsm: {'max': '300px'},
 
       vsm: {'max': '372px'},
@@ -22,15 +17,19 @@ module.exports = {
 
       sm: {'max': '600px'},
 
+      lsm: {'max': '638px'},
+      
       md: {'max': '700px'},
 
+      lmd: {'max': '750px'},
+      
+      xlmd: {'max': '840px'} ,
+     
       lg: {'max': '900px'},
 
       xl: {'max': '1150px'},
       
 
-      // '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
     },
     extend: {
       clipPath: {
@@ -65,7 +64,7 @@ module.exports = {
       gridTemplateColumns: {
         'features': 'repeat(auto-fit, minmax(18.7rem, .5fr))',
         'md-features': 'repeat(auto-fit, minmax(15.7rem, .5fr))',
-        'feature': '16rem',
+        'feature': '1fr',
         'advantage': 'repeat(auto-fit, minmax(10rem, 1fr))',
         'xladvantage': '1fr',
         'plans': 'repeat(auto-fit, minmax(24rem, 1fr))',
@@ -76,15 +75,17 @@ module.exports = {
         'mplan': 'repeat(1, 1fr)',
         'first-and-last-cols' : '.5fr repeat(4, 1fr) .5fr',
         'sm-first-and-last-cols' : '.2fr repeat(4, 1fr) .2fr',
+        'product': '1fr'
       },
       gridTemplateRows: {
-        'feature': 'repeat(2, 6.5rem)',
+        'feature': '1fr 1fr',
         'sales': '10rem 10rem max-content',
         'plans': 'repeat(auto-fit, minmax(min-content, .5fr))',
         'plan': 'repeat(3, minmax(13rem, 1fr))',
         'contact' : 'min-content',
         'footer': 'min-content',
-        'advantage': 'repeat(auto-fit, 1fr)'
+        'advantage': 'repeat(auto-fit, 1fr)',
+        'product': '.25fr 1fr'
       },
       borderRadius: {
         'me': '2.5rem',
@@ -128,16 +129,70 @@ module.exports = {
               opacity: '1',
               transform: 'translate(0)'
           }
+        },
+        animateBox : {
+          '13%' : {
+              transform: 'rotateX(20deg) rotateY(0deg)'
+          },
+          '20%' : {
+              transform: 'rotateX(60deg) rotateY(-25deg)'
+          },
+          '35%' : {
+              transform: 'rotateX(-80deg) rotateY(5deg);'
+          },
+      
+          '50%' : {
+              transform: 'rotateX(15deg) rotateY(80deg);'
+          },
+      
+          '65%' : {
+              transform: 'rotateX(10deg) rotateY(-90deg);'
+          },
+      
+          '80%' : {
+              transform: 'rotateX(13deg) rotateY(-180deg);'
+          },
+          
+          '97%' : {
+              transform: 'rotateX(-280deg) rotateY(-5deg);'
+          },
+
+          '100%' : {
+              transform: 'rotateX(-280deg) rotateY(-5deg);'
+          }
+        },
+        rotate : {
+          '0%' : {
+              transform: 'perspective(1000px) rotateY(0deg);'
+          },
+          '100%' : {
+              transform: 'perspective(1000px) rotateY(360deg);'
+          }
         }
       },
       animation: {
         moveInLeft: 'moveInLeft 1s ease-out',
         moveInRight: 'moveInRight 1s ease-out',
-        moveInBottom: 'moveInBottom .5s ease-out .5s'
+        moveInBottom: 'moveInBottom .5s ease-out .5s',
+        animateBox: 'animateBox 10s infinite',
+        animateHoverBox: 'animateBox 25s infinite',
+        rotate: 'rotate 35s linear infinite',
+        slowRotate: 'rotate 45s linear infinite'
       }
     },
   },
   plugins: [
     require("tailwindcss-inner-border"),
+    plugin(function({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'translate-z': (value) => ({
+            '--tw-translate-z': value,
+            transform: ` translate3d(var(--tw-translate-x), var(--tw-translate-y), var(--tw-translate-z)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))`,
+          }), // this is actual CSS
+        },
+        { values: theme('translate'), supportsNegativeValues: true }
+      )
+    })
   ],
 }

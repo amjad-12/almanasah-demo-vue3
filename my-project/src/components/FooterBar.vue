@@ -101,7 +101,7 @@ function Toggler(char) {
    @apply pt-[10rem];
 
    a {
-     @apply text-white text-3xl font-medium;
+     @apply transition-all duration-[.2s] text-white text-3xl font-medium;
 
      &:hover {
        @apply text-[#283a9d9e];

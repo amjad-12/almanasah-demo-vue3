@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <div class="col-start-2 col-end-12 grid grid-cols-6 grid-rows-sales">
+    <div id="prices" class="col-start-2 col-end-12 grid grid-cols-6 grid-rows-sales">
         <h1
             class="hover:skew-x-[-15deg] hover:skew-y-[-1deg] hover:scale-110 transition-all duration-[.2s] col-start-1 col-end-7 row-start-1 row-end-2 justify-self-center self-end text-6xl text-fontColor font-bold">
             نشاط البيع</h1>

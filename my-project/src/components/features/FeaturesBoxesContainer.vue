@@ -1,15 +1,9 @@
 <script>
-import FeatureBox from './FeatureBox.vue'
 
-export default {
-    components: {
-        FeatureBox: FeatureBox
-    }
-}
 </script>
 
 <template>
-    <div class="grid grid-cols-first-and-last-cols grid-rows-6 col-start-6 col-end-12 lg:col-start-1 lg:col-end-13 ">
+    <div  class="grid grid-cols-first-and-last-cols grid-rows-6 col-start-6 col-end-12 lg:col-start-1 lg:col-end-13 ">
         <div
             class="row-start-1 row-end-5 lg:row-start-1 lg:row-end-7  lg:mb-8 col-start-1 col-end-7 grid grid-cols-features xl:grid-cols-md-features justify-items-start sm:justify-items-center sm:justify-center items-end gap-3 bg-gradient-to-r from-[#c7e6ff] to-[#ebf6ff] rounded-me md:col-start-1 md:col-end-7 lg:col-start-2 lg:col-end-6">
             <div class="box__feature">

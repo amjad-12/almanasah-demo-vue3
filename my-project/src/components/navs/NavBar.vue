@@ -3,11 +3,11 @@
         <div class="grid grid-flow-col justify-around self-center">
             <a class="h-16 w-56 " href="/"><img src="/logo-almanasah-3.png" alt=""></a>
             <ul class="grid grid-flow-col gap-16 items-center nav-header font-semibold text-mainColor text-2xl">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">الميزات</a></li>
-                <li><a href="#">عملاؤنا</a></li>
-                <li><a href="#">الأسعار</a></li>
-                <li><a href="#">اتصل بنا</a></li>
+                <li class="text-[#466bf3]"><a href="#home">الرئيسية</a></li>
+                <li><a href="#features">الميزات</a></li>
+                <li><a href="#customers">عملاؤنا</a></li>
+                <li><a href="#prices">الأسعار</a></li>
+                <li><a href="#contact-us">اتصل بنا</a></li>
                 <li><a class="btn_outline" href="/">تسجيل الدخول</a></li>
             </ul>
         </div>

@@ -46,7 +46,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 10rem 90vh 70vh 100vh 75vh 40vh min-content min-content 40vh;
+    grid-template-rows: 10rem 90vh min-content 100vh 75vh 40vh min-content min-content 40vh;
   }
 
   /* @media only screen and (max-width: 700px) {
@@ -54,15 +54,14 @@
         grid-template-rows: 10rem 90vh 70vh 100vh 75vh 40vh min-content 100vh 45vh;;
     }
   } */
-
+  
   @media only screen and (max-width: 900px) {
     .Mycontainer {
       /* row-gap: 1.5rem; */
-      grid-template-rows: 3rem 60vh min-content min-content min-content 50vh 50vh min-content min-content min-content min-content min-content;
+      grid-template-rows: 3rem 60vh min-content min-content min-content 90vh 50vh min-content min-content min-content min-content min-content;
     }
   }
-
-
+  
   .btn_outline {
     @apply border rounded-full p-3 border-mainColor text-mainColor flex justify-center transition-all duration-[.2s];
 
