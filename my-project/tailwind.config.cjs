@@ -168,7 +168,27 @@ module.exports = {
           '100%' : {
               transform: 'perspective(1000px) rotateY(360deg);'
           }
-        }
+        },
+        pulseImage : {
+          '0%' : {
+              scale: '1.01;'
+          },
+          '20%' : {
+              scale: '1.04;'
+          },
+          '40%' : {
+              scale: '1.05;'
+          },
+          '60%' : {
+              scale: '1.05;'
+          },
+          '60%' : {
+              scale: '1.04;'
+          },
+          '100%' : {
+              scale: '1.01;'
+          }
+      }
       },
       animation: {
         moveInLeft: 'moveInLeft 1s ease-out',
@@ -177,7 +197,8 @@ module.exports = {
         animateBox: 'animateBox 10s infinite',
         animateHoverBox: 'animateBox 25s infinite',
         rotate: 'rotate 35s linear infinite',
-        slowRotate: 'rotate 45s linear infinite'
+        slowRotate: 'rotate 45s linear infinite',
+        pulseImage: 'pulseImage 3s linear infinite'
       }
     },
   },

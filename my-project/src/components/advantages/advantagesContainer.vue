@@ -59,4 +59,5 @@
 .advantage__par-small {
     @apply text-parColor text-2xl font-bold
 }
+
 </style>
