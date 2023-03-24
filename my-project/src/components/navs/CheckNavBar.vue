@@ -12,7 +12,7 @@
             <ul class="navigation__list font-semibold text-mainColor text-5xl">
                 <li class="navigation__item"><a href="#" class="navigation__link--logo"><img class="w-[20rem] -mt-[8rem]"
                             src="/logo-almanasah-3.png" alt=""></a></li>
-                <li class="navigation__item"><a href="#home" class="navigation__link"><span>2</span> الميزات</a></li>
+                <li class="navigation__item"><a href="#features" class="navigation__link"><span>2</span> الميزات</a></li>
                 <li class="navigation__item"><a href="#customers" class="navigation__link"><span>3</span> عملاؤنا</a></li>
                 <li class="navigation__item"><a href="#prices" class="navigation__link"><span>4</span> الأسعار</a></li>
                 <li class="navigation__item"><a href="#contact-us" class="navigation__link"><span>5</span> اتصل بنا</a></li>
@@ -116,6 +116,7 @@
                 margin-right: 1.5rem;
                 display: inline-block;
             }
+
 
 
         }

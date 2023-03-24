@@ -25,8 +25,6 @@ export default {
     FeatureInfo: FeatureInfo,
     FeaturesBoxesContainer: FeaturesBoxesContainer,
     AnimateFeatures: AnimateFeatures,
-    // OurProducts: OurProducts,
-    // SliderProducts: SliderProducts,
     AnimateProductsSlider: AnimateProductsSlider,
     MobileVideo: MobileVideo,
     MobileInfo: MobileInfo,
@@ -47,8 +45,6 @@ export default {
     <HeroImage></HeroImage>
     <FeatureInfo></FeatureInfo>
     <AnimateFeatures></AnimateFeatures>
-    <!-- <OurProducts></OurProducts> -->
-    <!-- <SliderProducts></SliderProducts> -->
     <AnimateProductsSlider></AnimateProductsSlider>
     <MobileVideo></MobileVideo>
     <MobileInfo></MobileInfo>

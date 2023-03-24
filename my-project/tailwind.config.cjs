@@ -75,7 +75,7 @@ module.exports = {
         'mplan': 'repeat(1, 1fr)',
         'first-and-last-cols' : '.5fr repeat(4, 1fr) .5fr',
         'sm-first-and-last-cols' : '.2fr repeat(4, 1fr) .2fr',
-        'product': '1fr'
+        'product': '1fr',
       },
       gridTemplateRows: {
         'feature': '1fr 1fr',
@@ -85,7 +85,8 @@ module.exports = {
         'contact' : 'min-content',
         'footer': 'min-content',
         'advantage': 'repeat(auto-fit, 1fr)',
-        'product': '.25fr 1fr'
+        'product': '.25fr 1fr',
+        'animateProducts': 'min-content repeat(4, 1fr)'
       },
       borderRadius: {
         'me': '2.5rem',

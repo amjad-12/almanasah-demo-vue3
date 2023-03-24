@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <template>
     <div  class="grid grid-cols-first-and-last-cols grid-rows-6 col-start-6 col-end-12 lg:col-start-1 lg:col-end-13 ">
         <div

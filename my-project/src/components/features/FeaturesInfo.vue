@@ -1,5 +1,5 @@
 <template>
-        <div id="features" class="col-start-2 col-end-6 lg:col-start-1 lg:col-end-13 grid grid-cols-first-and-last-cols grid-rows-6 -mt-3">
+        <div id="features" class="lg:mt-6 col-start-2 col-end-6 lg:col-start-1 lg:col-end-13 grid grid-cols-first-and-last-cols grid-rows-6 -mt-3">
         <h1
             class="font-bold text-3xl text-mainColor col-start-2 col-end-4 lg:col-start-2 lg:col-end-6 lg:justify-self-center row-start-1 row-end-2 lg:row-start-1 lg:row-end-2 self-center msm:self-end">
             ميزاتنا

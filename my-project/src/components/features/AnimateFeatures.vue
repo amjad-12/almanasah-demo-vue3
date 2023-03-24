@@ -1,5 +1,5 @@
 <template>
-    <div class="col-start-7 col-end-12 lg:col-start-1 lg:col-end-13 lg:justify-items-center grid grid-rows-6 grid-cols-6">
+    <div class="lg:mt-6 col-start-7 col-end-12 lg:col-start-1 lg:col-end-13 lg:justify-items-center grid grid-rows-6 grid-cols-6">
         <div class="container  col-start-2 col-end-6 row-span-full grid grid-rows-6 grid-cols-6">
             <div class=" box col-start-1 col-end-6 lg:col-start-1 lg:col-end-7 lg:justify-self-center row-start-2 row-end-7">
             
@@ -96,15 +96,6 @@
 
 .card {
     @apply h-[27.2rem] w-[27.2rem] lg:h-[22rem] lg:w-[22rem] text-center text-white border-2 border-solid border-white box-border absolute bg-gradient-to-r from-[#c7e6ff] to-[#ebf6ff];
-    /* height: 272px;
-    width: 272px;
-    text-align: center;
-
-    color: white;
-    border: 2px solid white;
-    box-sizing: border-box;
-    position: absolute;
-    background-image: linear-gradient(to right, #c7e6ff, #ebf6ff); */
 }
 
 #front {
