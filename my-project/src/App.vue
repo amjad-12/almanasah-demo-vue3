@@ -6,8 +6,6 @@ import HeroImage from './components/hero/HeroImage.vue'
 import FeatureInfo from './components/features/FeaturesInfo.vue'
 import FeaturesBoxesContainer from './components/features/FeaturesBoxesContainer.vue'
 import AnimateFeatures from './components/features/AnimateFeatures.vue'
-// import OurProducts from './components/OurProducts.vue'
-// import SliderProducts from './components/SliderProducts.vue'
 import AnimateProductsSlider from './components/AnimateProductsSlider.vue'
 import MobileVideo from './components/mobile/MobileVideo.vue'
 import MobileInfo from './components/mobile/MobileInfo.vue'
@@ -38,7 +36,7 @@ export default {
 </script>
 
 <template>
-  <body class="Mycontainer">
+  <body  class="Mycontainer">
     <NavBar></NavBar>
     <CheckNavBar></CheckNavBar>
     <HeroInfo></HeroInfo>
@@ -52,6 +50,7 @@ export default {
     <PlansContainer></PlansContainer>
     <ContactUsContainer></ContactUsContainer>
     <FooterBar></FooterBar>
+
   </body>
 </template>
 
