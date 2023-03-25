@@ -83,7 +83,7 @@
 
 
 .container {
-    height: 50vh;
+    height: 35vh;
     perspective: 1000px;
 }
 

@@ -1,7 +1,7 @@
 <template>
      <div id="customers" class="col-start-2 overflow-hidden col-end-12 md:col-span-full  grid grid-cols-6  grid-rows-animateProducts">
-        <h1 class="six-px col-start-3 col-end-5 row-start-1 row-end-3 self-center lg:self-end justify-self-center     hover:skew-x-[-15deg] hover:skew-y-[-1deg] hover:scale-110 transition-all duration-[.2s] text-7xl font-bold text-mainColor">عملاؤنا</h1>
-        <div class=" col-start-2 col-end-6 row-start-3 row-end-7 slider self-center justify-self-center">
+        <h1 class="six-px mt-[9rem] lg:mt-[10rem] mb-[5rem] col-start-3 col-end-5 self-center lg:self-end justify-self-center     hover:skew-x-[-15deg] hover:skew-y-[-1deg] hover:scale-110 transition-all duration-[.2s] text-7xl font-bold text-mainColor">عملاؤنا</h1>
+        <div class="my-[8rem] col-start-2 col-end-6  slider self-center justify-self-center">
             <span class="card" style="--i:1;">
                 <h1 class="card__title">ميلك شيك</h1>
                 <img class="card__image" src="/slide-1.jpg" alt="">

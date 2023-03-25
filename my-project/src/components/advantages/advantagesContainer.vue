@@ -45,7 +45,7 @@
 
 <style scoped>
 .advantage__box {
-    @apply grid grid-cols-1 content-center justify-items-center grid-rows-advantage
+    @apply my-[3rem] grid grid-cols-1 content-center justify-items-center grid-rows-advantage
 }
 
 .advantage__icon {

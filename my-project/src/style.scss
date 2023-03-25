@@ -28,6 +28,11 @@
 
     font-size: 62.5%;
     font-family: 'Noto Kufi Arabic', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   @media only screen and (max-width: 1300px) {
@@ -46,7 +51,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 10rem 90vh min-content 100vh 75vh 40vh min-content min-content 40vh;
+    grid-template-rows: 10rem min-content min-content min-content min-content min-content min-content min-content 40vh;
   }
 
   /* @media only screen and (max-width: 700px) {
@@ -58,7 +63,7 @@
   @media only screen and (max-width: 900px) {
     .Mycontainer {
       /* row-gap: 1.5rem; */
-      grid-template-rows: 3rem 60vh min-content min-content min-content 90vh 50vh min-content min-content min-content min-content 50vh;
+      grid-template-rows: 3rem 60vh min-content min-content min-content min-content 50vh min-content min-content min-content min-content 50vh;
     }
   }
   

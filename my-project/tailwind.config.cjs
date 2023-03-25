@@ -86,7 +86,7 @@ module.exports = {
         'footer': 'min-content',
         'advantage': 'repeat(auto-fit, 1fr)',
         'product': '.25fr 1fr',
-        'animateProducts': 'min-content repeat(4, 1fr)'
+        'animateProducts': 'min-content min-content'
       },
       borderRadius: {
         'me': '2.5rem',
