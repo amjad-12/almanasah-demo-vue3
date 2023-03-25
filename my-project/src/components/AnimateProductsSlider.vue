@@ -62,11 +62,6 @@
     }
 }
 
-// @media screen and (max-width: 600px) {
-//     .six-px {
-//         @apply self-center
-//     }
-// }
 
 
 

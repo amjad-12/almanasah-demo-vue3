@@ -186,14 +186,7 @@
         transform: scale(80);
     }
 
-    // &__button::after {
-    //     content: 'pl';
-    //     color: plum;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    //     position: absolute;
-    // }
+
 
     &__checkbox:checked~&__nav {
         opacity: 1;
