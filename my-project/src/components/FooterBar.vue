@@ -25,7 +25,7 @@
    }
 
    &__copyright {
-     @apply text-4xl text-white opacity-60 mt-5;
+     @apply text-[1.8rem] text-white opacity-60 mt-10;
    }
    
    &--dark {
@@ -34,15 +34,8 @@
     .footer__logo {
       @apply mt-8
     }
-    .footer__copyright {
-      margin: 2.5rem;
-      font-size: 2rem;
-    }
+
  }
 
- @media screen and (min-width: 768px) {
-
-
-}
 
  </style>

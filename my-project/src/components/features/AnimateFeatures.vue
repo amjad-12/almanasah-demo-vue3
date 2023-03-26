@@ -88,15 +88,41 @@
 }
 
 .box {
-    @apply h-[27rem] w-[27rem] lg:h-[22rem] lg:w-[22rem] animate-animateBox hover:animate-animateHoverBox;
+    @apply h-[27rem] w-[27rem]  animate-animateBox hover:animate-animateHoverBox;
     transform-style: preserve-3d;
 }
+
+@media screen and (max-width: 900px) {
+    .box {
+        @apply lg:h-[22rem] lg:w-[22rem]
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box {
+        @apply lg:h-[20rem] lg:w-[20rem]
+    }
+}
+
 
 
 
 .card {
-    @apply h-[27.2rem] w-[27.2rem] lg:h-[22rem] lg:w-[22rem] text-center text-white border-2 border-solid border-white box-border absolute bg-gradient-to-r from-[#c7e6ff] to-[#ebf6ff];
+    @apply h-[27.2rem] w-[27.2rem]  text-center text-white border-2 border-solid border-white box-border absolute bg-gradient-to-r from-[#c7e6ff] to-[#ebf6ff];
 }
+
+@media screen and (max-width: 900px) {
+    .card {
+        @apply lg:h-[22rem] lg:w-[22rem]
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        @apply lg:h-[20rem] lg:w-[20rem]
+    }
+}
+
 
 #front {
     transform: translateZ(13.4rem);
@@ -105,6 +131,12 @@
 @media screen and (max-width: 900px) {
     #front {
         transform: translateZ(11rem);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #front {
+        transform: translateZ(10rem);
     }
 }
 
@@ -118,6 +150,12 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    #back {
+        transform: translateZ(-10rem) rotateY(-180deg);
+    }
+}
+
 #left {
     right: 13.4rem;
     transform: rotateY(-90deg);
@@ -125,6 +163,13 @@
 @media screen and (max-width: 900px) {
     #left {
         right: 11rem;
+        transform: rotateY(-90deg);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #left {
+        right: 10rem;
         transform: rotateY(-90deg);
     }
 }
@@ -141,6 +186,13 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    #right {
+        left: 10rem;
+        transform: rotateY(90deg);
+    }
+}
+
 #top {
     bottom: 13.4rem;
     transform: rotateX(90deg);
@@ -153,6 +205,13 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    #top {
+        bottom: 10rem;
+        transform: rotateX(90deg);
+    }
+}
+
 #bottom {
     top: 13.4rem;
     transform: rotateX(-90deg);
@@ -161,6 +220,13 @@
 @media screen and (max-width: 900px) {
     #bottom {
         top: 11rem;
+        transform: rotateX(-90deg);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #bottom {
+        top: 10rem;
         transform: rotateX(-90deg);
     }
 }
